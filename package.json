@@ -4,13 +4,21 @@
   "description": "Babel ES.NEXT Tests usting Webpack and Yarn",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server --port 8080 --host 0.0.0.0",
+    "webpack": "webpack"
+  },
+  "bin": {
+    "wp": "./node_modules/.bin/webpack"
+  },
   "dependencies": {
     "babel-core": "^6.18.2",
     "babel-loader": "^6.2.8",
     "babel-polyfill": "^6.16.0",
     "babel-runtime": "^6.18.0",
     "bluebird": "^3.4.6",
-    "webpack": "^2.1.0-beta"
+    "webpack": "^2.1.0-beta",
+    "webpack-dev-server": "^2.1.0-beta"
   },
   "devDependencies": {
     "babel-plugin-transform-runtime": "^6.15.0",
